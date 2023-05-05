@@ -3,10 +3,7 @@
     background-color: rgb(138, 126, 187);
     padding: 4%;
 }
-/* .clothes{
-   font-size: 200%;
-    margin-left: 40%;
-} */
+
 li{
     list-style: none;
 }
@@ -25,11 +22,10 @@ a{
     
 }
 .shopify{
-    /* font-size: 150%; */
     color: black;
     text-align: center;
-    padding: 5%;
-    /* color: aliceblue; */
+    /* padding: 5%; */
+    margin-top: -20%;
 }
 .vintage{
     width: 6000%;
@@ -39,11 +35,7 @@ a{
     padding: 8px;
     background-color: palevioletred;
 }
-.pic{
-    width: 40%;
-    height: 40%;
-    padding-left: 60%;
-}
+
 .head{
     display: flex;
 }
@@ -65,31 +57,31 @@ a{
     text-align: center;
 }
 .shoes{
-    display: flex;
-    /* flex-direction: column; */
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-/* .fusionshoes{
-    top: -500px;
-} */
+
 .athleteshoe{
     padding-right: 20%;
-    height: 500px;
-    width: 400px;
+    height: 67%;
+    width: 100%;
+    
 }
 #sh{
     margin-left: 5%;
     height: 70%;
     width: 70%;
 }
-.fshoes{
-    /* display: flex;
-    flex-direction: column; */
+.fshoe{
+    height: 1000%;
+    width: 100%;
+  
 }
 .heading{
     text-align: center;
     color: antiquewhite;
     margin-left: 10%;
-    /* margin-top: 5%; */
 }
 .headingimage{
     margin: 0% 0% 0% 20%;
@@ -105,7 +97,7 @@ a{
 .discoverbutton{
     padding: 10px 40px;
     background-color: palevioletred;
-   ;
+   
 }
 .selection{
     text-align: center;
@@ -118,4 +110,55 @@ a{
 .viewbutton{
     padding: 5px;
     background-color: palevioletred;
+}
+
+@media screen and (max-width: 800px){
+
+ul{
+    display:flex ;
+    flex-direction: column;
+    gap: 1%;
+  
+      }
+.about{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  
+}
+
+ul{
+    flex-direction: row;
+    gap: 1%;
+   
+
+}
+img{
+
+    max-width: 300px;
+    max-height: 300px;
+
+}
+body{
+    background-color: sandybrown ;
+ 
+
+}
+
+}
+
+
+
+@media screen  and(max-width: 1200px){
+    .about{
+        flex-basis: 100%;
+        background-color: rgb(204, 214, 211);
+    }
+    img{
+
+        max-width: 300px;
+        max-height: 300px;
+    
+    }
+   
+    
 }
